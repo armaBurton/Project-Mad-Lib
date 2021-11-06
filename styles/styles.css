@@ -1,22 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 
 body {        
     font-family: 'Titillium Web', sans-serif;
-    background-color: #FFFCFA;
+    background-color: #3a3a3a;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    background-image: url(../assets/raven-dark.jpg);
+    background-size: cover;
 }
 
 main {
-    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    /* padding: 30px; */
 }
 
 header {
-    background-color: #A2D7D2;
+    background-color: black;
     height: 110px;
     padding: 0 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 5px solid rgb(73, 0, 0);
 }
 
 header img {
@@ -32,4 +45,94 @@ h1 {
 footer {
     background-color: #FAF0EA;
     padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid rgb(73, 0, 0);
+}
+
+.bkgnd-color{
+    background-color: black;
+    color:rgb(73, 0, 0);
+    z-index: 100;
+}
+
+#left{
+    /* height: 30vh; */
+    /* width: 49%; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#left-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+#left-left{
+    display: flex;
+    flex-direction: column;
+}
+
+#left-right{
+    display: flex;
+    flex-direction: column;
+}
+
+#right{
+    width: 50%;
+}
+
+input{
+    margin-bottom: 3px;
+    margin-right: 3px;
+    width: 150px;
+    padding: 3px 1px;
+}
+
+#madlibify{
+    width: 303px;
+    background-color: black;
+    color: #3a3a3a;
+    font-weight: 900;
+}
+
+#madlibify:hover{
+    background-color: #3a3a3a;
+    color: black;
+}
+
+#mad-lib{
+    position: fixed;
+    /* background-color: #3a3a3a; */
+    height: 1000px;
+    /* width: 43%; */
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+    color: lightgray;
+    /* text-shadow: 0 0 20px white; */
+}
+
+#return{
+    width: 303px;
+    background-color: black;
+    color: #3a3a3a;
+    font-weight: 900;
+    visibility: hidden;
+}
+
+#return:hover{
+    background-color: #3a3a3a;
+    color: black;
+}
+
+span{
+    font-weight: 900;
 }

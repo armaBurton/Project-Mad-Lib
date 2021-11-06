@@ -8,22 +8,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/styles.css">
-    <title>My App</title>
+    <title>Raven Mad-Lib</title>
 </head>
 
 <body>
-    <header>
-        <h1>My App</h1>
+    <header class="bkgnd-color">
+        <h1>The Raven: Mad-Lib</h1>
         <img src="assets/big-logo.png" />
     </header>
     
     <main>
+        <div id="left">
+            <div id="left-wrapper">
+                <div id="left-left">
+                    <input type="text" value="Adjective" onclick="this.select()" id="adj01">
+                    <input type="text" value="Adjective" onclick="this.select()" id="adj02">
+                    <input type="text" value="Adjective" onclick="this.select()" id="adj03">
+                    <input type="text" value="Noun" onclick="this.select()" id="noun01">
+                    <input type="text" value="Noun" onclick="this.select()" id="noun02">
+                    <input type="text" value="Verb Ending in ED" onclick="this.select()" id="verb-ed01">
+                    <input type="text" value="Noun" onclick="this.select()" id="noun03">
+                    <input type="text" value="Noun" onclick="this.select()" id="noun04">
+                    <input type="text" value="Place" onclick="this.select()" id="place01">
+                    <input type="text" value="Noun" onclick="this.select()" id="noun05">
+                </div>
+                <div id="left-right">
+                    <input type="text" value="Adjective" onclick="this.select()" id="adj04">
+                    <input type="text" value="Verb ending in ING" onclick="this.select()" id="verb-ing01">
+                    <input type="text" value="Noun" onclick="this.select()" id="noun06">
+                    <input type="text" value="Verb Ending in ED" onclick="this.select()" id="verb-ed02">
+                    <input type="text" value="Adverb" onclick="this.select()" id="adverb01">
+                    <input type="text" value="Plural Noun" onclick="this.select()" id="noun-s01">
+                    <input type="text" value="Adjective" onclick="this.select()" id="adj05">
+                    <input type="text" value="Adjective" onclick="this.select()" id="adj06">
+                    <input type="text" value="Adjective" onclick="this.select()" id="adj07">
+                    <input type="text" value="Female Name" onclick="this.select()" id="fem-name">
+                </div>
+            </div>
+            <input type="button" value="Mad-Libify" id="madlibify">
+                
+            <div id="mad-lib">
+                <p>Once upon a midnight <span id="fill-adj01">adj01</span>, while I pondered <span id="fill-adj02">adj02</span> and <span id="fill-adj03">adj03</span>,</p>
+                <p>Over many a quaint and curious <span id="fill-noun01">noun01</span> of forgotten <span id="fill-noun02">noun02</span>,</p>
+                <p>While I <span id="fill-verb-ed01">verbed</span>, nearly napping, suddenly there came a <span id="fill-noun03">noun3</span>,</p>
+                <p>As of <span id="fill-noun04">noun4</span> gently rapping, rapping at my <span id="fill-place01">place1</span> door.</p>
+                <p>``Tis some <span id="fill-noun05">noun05</span>,` I muttered, `tapping at my <span id="fill-place02">place1</span> door -</p>
+                <p>Only this, and nothing more.`</p>
+                <br>
+                <p>Ah, distinctly I remember it was in the <span id="fill-adj04">adj4</span> December,</p>
+                <p>And each separate <span id="fill-verb-ing01">verbing1</span> ember wrought its <span id="fill-noun06">noun5</span> upon the floor.</p>
+                <p>Eagerly I <span id="fill-verb-ed02">verbed2</span> the morrow; - <span id="fill-adverb01">adverb</span> I had sought to borrow</p>
+                <p>From my <span id="fill-noun-s01">nouns</span> surcease of sorrow - sorrow for the <span id="fill-adj05">adj5</span> Lenore -</p>
+                <p>For the <span id="fill-adj06">adj6</span> and <span id="fill-adj07">adj7</span> maiden whom the angels named <span id="fill-fem-name">femname</span> -</p>
+                <p>Nameless here for evermore.</p>
+                <br>
+                <input type="button" value="Return" id="return">
+            </div>
+            <!-- <br> -->
+        </div>
+        <div id="right">
 
-        Make a Web App!
+        </div>
         
     </main>
 
-    <footer>
+    <footer class="bkgnd-color">
         &copy; 2021 Alchemy Code Lab
     </footer>
 
